@@ -1,0 +1,561 @@
+@font-face {
+    font-family: "Public Sans";
+    src: url("../fonts/PublicSans-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Public Sans";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    height: 80px;
+    width: 100%;
+    background-color: #FFF;
+    position: relative;
+    z-index: 2;
+}
+
+.logo_menu_and_button {
+    height: 80px;
+    padding: 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 17px;
+}
+
+.menu ul a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    font-size: 14px;
+    color: #9698a6;
+}
+
+.menu ul a:hover {
+    color: #2d314d;
+}
+
+.menu ul a::before {
+    content: "";
+    height: 1px;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.menu ul a::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    margin-top: auto;
+    background: transparent;
+}
+
+.menu ul a:hover::after {
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+}
+
+.mobile_menu {
+    display: none;
+}
+
+.button {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+    background: linear-gradient(to right, #31d35c, #2bb7da);
+    padding: 12px 30px;
+    border-radius: 25px;
+    display: inline-block;
+    position: relative;
+}
+
+.button::after {
+    content: "Request Invite";
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 12px 30px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 25px;
+    transition: all 0.25s;
+}
+
+.button:hover::after {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.next_generation_digital_banking {
+    padding: 176px 120px;
+    height: 656px;
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    background-image: url("../images/bg-intro-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 533px -260px;
+}
+
+.next_generation_desc {
+    width: 454px;
+}
+
+.next_generation_desc h1 {
+    font-size: 54px;
+    font-weight: 400;
+    color: #2d314d;
+}
+
+.next_generation_desc p {
+    color: #9698a6;
+    line-height: 25px;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    font-size: 18px;
+}
+
+.screenshots_app {
+    position: absolute;
+    top: -40px;
+    right: -133px;
+}
+
+
+.default_section {
+    padding: 107px 120px;
+    background-color: #f3f4f6;
+}
+
+.section_title_and_desc {
+    margin-bottom: 72px;
+}
+
+.section_title_and_desc h2 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #2d314d;
+    margin-bottom: 25px;
+}
+
+.section_title_and_desc p {
+    font-size: 18px;
+    width: 650px;
+    color: #9698a6;
+    line-height: 25px;
+}
+
+.easy_bank_features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.easy_bank_features_items h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2d314d;
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.easy_bank_features_items p {
+    color: #9698a6;
+    padding-right: 30px;
+    line-height: 25px;
+}
+
+.very_light_gray_background {
+    background-color: #fafafa;
+}
+
+.very_light_gray_background .section_title_and_desc {
+    margin-bottom: 52px;
+}
+
+
+.latest_articles {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    max-width: 255px;
+    height: 395px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+.article_thumbnail img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    display: block;
+}
+
+.article_content {
+    background-color: #FFF;
+    padding: 22px 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.article_author {
+    font-size: 10px;
+    color: #9698a6;
+}
+
+.article_content h4 {
+    font-weight: 400;
+    color: #2d314d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.article_content p {
+    color: #9698a6;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+article a:hover .article_content h4 {
+    color: #33c78b;
+}
+
+
+footer {
+    background-color: #2d314d;
+    padding: 48px 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social_media_and_links {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.social_media {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.social_media a {
+    margin-right: 13px;
+}
+
+.social_media svg:hover path {
+    fill: #33c78b;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.links a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.links a:hover {
+    color: #33c78b;
+}
+
+.button_and_copyright {
+    text-align: right;
+    flex: 1;
+}
+
+.button_and_copyright .button {
+    margin-bottom: 30px;
+}
+
+.button_and_copyright .copyright {
+    color: #9698a6;
+    font-size: 15px;
+}
+
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 1024px) {
+    .next_generation_desc {
+        width: 414px;
+    }
+
+    .screenshots_app {
+        right: -154px;
+        top: 20px;
+    }
+
+    .screenshots_app img {
+        width: 637px;
+    }
+    
+
+    article {
+        margin-right: 10px;
+    }
+
+    .article_thumbnail img {
+        height: 141px;
+    }
+
+    .article_content {
+        height: 272px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        height: 64px;
+    }
+
+    .logo_menu_and_button {
+        padding: 0 24px;
+        height: 64px;
+    }
+
+    .mobile_menu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        height: calc(100vh - 64px);
+        width: 100vw;
+        top: 64px;
+        left: 0;
+        background: linear-gradient(#2d314d, transparent);
+        padding: 24px;
+        opacity: 0;
+        transition: all 0.3s ease;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: #FFF;
+        padding: 18px;
+        border-radius: 5px;
+        margin-top: -354px;
+        transition: all 0.3s ease;
+    }
+
+    .menu ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .menu ul a {
+        height: auto;
+        color: #2d314d;
+        font-size: 18px;
+    }
+
+    .logo_menu_and_button .button {
+        display: none;
+    }
+
+    
+    .next_generation_digital_banking {
+        background-position: 300px -260px;
+        flex-direction: column;
+        height: auto;
+        padding: 88px 24px;
+        padding-top: 0;
+    }
+
+    .next_generation_desc {
+        order: 1;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .screenshots_app {
+        position: static;
+        margin-top: -142px;
+    }
+
+
+    .default_section {
+        padding: 65px 24px;
+    }
+
+    .section_title_and_desc {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section_title_and_desc p {
+        width: 560px;
+    }
+
+    .very_light_gray_background .section_title_and_desc {
+        margin-bottom: 0;
+    }
+
+    .very_light_gray_background .section_title_and_desc h2 {
+        margin-bottom: 0;
+    }
+
+
+    .easy_bank_features {
+        flex-wrap: wrap;
+    }
+
+    .easy_bank_features_items {
+        width: calc(50vw - 24px);
+        margin-top: 36px;
+        text-align: center;
+    }
+
+    .easy_bank_features_items p {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    
+    .latest_articles {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    article {
+        margin-right: 0;
+        height: auto;
+        margin-top: 24px;
+    }
+    
+    .article_content {
+        height: auto;
+    }
+
+    
+    footer {
+        padding: 48px 24px;
+        flex-direction: column;
+    }
+
+    .social_media_and_links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social_media {
+        margin-top: 32px;
+        margin-bottom: 10px;
+    }
+
+    .social_media a {
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+
+    .links a {
+        margin-top: 20px;
+    }
+
+    .button_and_copyright {
+        text-align: center;
+        margin-top: 35px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .next_generation_digital_banking {
+        background-image: url("../images/bg-intro-mobile.svg");
+        background-position: 0 -64px;
+    }
+
+    .next_generation_desc {
+        width: 340px;
+    }
+
+    .next_generation_desc h1 {
+        font-size: 40px;
+    }
+
+    .next_generation_desc p {
+        font-size: 15px;
+    }
+
+    .screenshots_app {
+        margin-top: -122px;
+    }
+
+    .screenshots_app img {
+        width: 343px;
+    }
+
+
+    .section_title_and_desc h2 {
+        font-size: 32px;
+    }
+
+    .section_title_and_desc p {
+        width: auto;
+        font-size: 15px;
+    }
+
+    
+    .easy_bank_features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .easy_bank_features_items {
+        width: auto;
+    }
+
+    .easy_bank_features_items h3 {
+        margin-bottom: 20px;
+    }
+
+    .easy_bank_features_items p {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+
+    .latest_articles {
+        flex-direction: column;
+        align-items: center;
+    }
+}

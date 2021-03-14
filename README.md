@@ -12,6 +12,8 @@
 
 # :gear: Demonstração do site
 
+Acesse o site aqui: https://jvuser01.github.io/easybank-landing-page/
+
 ## Layout Desktop
 
 <div>

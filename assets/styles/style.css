@@ -337,7 +337,7 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 840px) {
     header {
         height: 64px;
     }
@@ -498,10 +498,10 @@ footer {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 440px) {
     .next_generation_digital_banking {
         background-image: url("../images/bg-intro-mobile.svg");
-        background-position: 0 -64px;
+        background-position: right -64px;
     }
 
     .next_generation_desc {
